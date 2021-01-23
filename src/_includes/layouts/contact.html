@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+  <article>
+    {% include "partials/page-header.html" %}
+    <div class="wrapper">
+      <form name="contact" method="POST" action="/success.html" netlify-honeypot="honigtopf" data-netlify="true">
+        <p class="visually-hidden">
+          <label>Don't fill this out if you're human! <input name="honigtopf" /></label>
+        </p>
+        <p>
+          <label>Your name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your E-Mail address: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button class="button" type="submit">Send it</button>
+        </p>
+      </form>
+    </div>
+  </article>
+{% endblock %}

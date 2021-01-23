@@ -1,0 +1,39 @@
+// using the devil's albatros
+// https://9elements.com/blog/the-devils-albatros-an-algorithmic-layout-technique/
+.site-head {
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &:before {
+            content: "";
+            flex-grow: 666;
+            flex-basis: calc((50rem - 100%) * 666);
+        }
+
+        > * {
+            // flex-grow: 1;
+            margin: $distance auto;
+        }
+  
+        // Drag the first child to the beginning, so that the pseudo 
+        // element moves to the center
+        > :first-child {
+            order: -1;
+        }
+    }
+
+    &__brand {
+        img {
+            border-radius: 50%;
+            transition: 0.5s ease-in;
+
+            &:hover, &:focus {
+                border-radius: 20%;
+            }
+        }
+    }
+}
+
+

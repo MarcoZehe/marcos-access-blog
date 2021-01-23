@@ -1,0 +1,38 @@
+// $bp-min: 300px;
+// 
+// .test {
+//     color: red;
+//     @include mq(min, $bp-min){
+//         color: blue;    
+//     }
+// }
+// -----------------------------------
+// .test2 {
+//     color: red;
+//     @include mq(min, 300px){
+//         color: blue;    
+//     }
+// }
+// -----------------------------------
+//  .test3 {
+//    color: red;
+//    @include mq(min-max, 400px, 800px) {
+//     color: blue; 
+//    }
+//  }
+
+@mixin mq($dimension, $breakpoint, $breakpoint2:false) {
+    @if $dimension == min {
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }		
+    } @else if $dimension == max {
+        @media screen and (max-width: $breakpoint) {
+            @content;
+        } 
+    } @else if $dimension == min-max {
+        @media screen and (min-width: $breakpoint) and (max-width: $breakpoint2) {
+            @content;
+        }	  
+    }
+}

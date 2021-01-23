@@ -1,0 +1,12 @@
+.skip-link {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 99;
+  
+    // @extends should be used with care, but this is a great example of them being hella useful
+    &:not(:focus) {
+      @extend .visually-hidden;
+    }
+  }
+  

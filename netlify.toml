@@ -1,0 +1,54 @@
+[build]
+  command = "npm run production"
+  publish = "dist"
+
+[[redirects]]
+  from = "/:year/:month/:date/:slug"
+  to = "/:slug"
+  status = 301
+
+[[redirects]]
+  from = "/feed/"
+  to = "/rss.xml"
+  status = 301
+
+[[redirects]]
+  from = "/rss/"
+  to = "/rss.xml"
+  status = 301
+
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    content-type = "application/rss+xml; charset=UTF-8"
+    
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Strict-Transport-Security = '''
+      max-age=63072000
+      includeSubDomains
+      preload'''
+
+
+# Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
+[[plugins]]
+  package = "netlify-plugin-fetch-feeds"
+
+  [plugins.inputs]
+    # Where should data files reside
+    dataDir = "src/_data"
+
+    # All the feeds we wish to gather for use in the build
+    [[plugins.inputs.feeds]]
+      name = "piccalilli"
+      url = "https://piccalil.li/feed.xml"
+      ttl = 86400   # Cache for 24 hours
+
+    [[plugins.inputs.feeds]]
+      name = "saraSoueidan"
+      url = "https://www.sarasoueidan.com/blog/index.xml"
+      ttl = 86400   # Cache for 24 hours

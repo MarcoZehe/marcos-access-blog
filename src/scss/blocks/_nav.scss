@@ -1,0 +1,52 @@
+.nav {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li:not(:last-of-type) {
+        margin-right: $distance/2;
+    }
+
+    li {
+        margin-bottom: 4px;
+        position: relative;       
+    }
+    
+    a {
+        display: block;
+        background: $nav-bg;
+        color: $nav-color;
+        padding: $distance/2 $distance;
+        border-bottom: 5px solid $nav-border;
+        transition: all 0.3s ease 0s; 
+
+        &:hover, &:focus,
+        &[aria-current]:hover,
+        &[aria-current]:focus {
+            color: $nav-hover-color;
+            text-decoration: none;
+        }
+
+        &:after {
+            content: "";
+            height: 0; 
+            width: 100%;
+            position: absolute; 
+            left: 0; 
+            bottom: 0;
+            transition: all 0.3s ease 0s; 
+            z-index: -1;
+            background-color: $nav-hover-bg;
+        }
+        &:hover:after,
+        &:focus:after {
+            height: 100%;
+        }
+        &[aria-current] {
+            border-bottom-color: #000;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}

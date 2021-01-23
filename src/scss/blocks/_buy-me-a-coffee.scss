@@ -1,0 +1,15 @@
+.buy-me-a-coffee {
+    max-width: 25rem;
+    background-color: $light-blue;
+    padding: $distance-large;
+    color: black;
+
+    &__headline {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+
+    p {
+        margin: $distance 0;
+    }
+}

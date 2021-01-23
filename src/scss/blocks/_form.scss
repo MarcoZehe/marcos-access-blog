@@ -1,0 +1,17 @@
+form {
+    p {
+        margin-bottom: $distance;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        display: block;
+        padding: $distance/2;
+        width: 80%;
+        margin-top: $distance/2;
+    }
+    textarea {
+        height: 150px;
+    }
+}

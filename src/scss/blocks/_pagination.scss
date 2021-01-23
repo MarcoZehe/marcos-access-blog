@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+        &:hover, &:focus {
+            text-decoration: none;
+            color: $pagination-hover-color;
+        }
+
+        &:first-of-type {
+            margin-right: $distance;
+        }
+    }
+}

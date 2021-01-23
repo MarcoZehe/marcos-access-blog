@@ -1,0 +1,11 @@
+{
+  "name": "Marco's Accessibility Blog",
+  "owner": "Marco Zehe",
+  "url": "https://www.marcozehe.de",
+  "authorName": "Marco Zehe",
+"authorEmail": "marco@marcozehe.de",
+"headimage": {
+  "source": "/images/marcos_kopp_100x100.jpg",
+  "alt": "Head shot of Marco Zehe"
+}
+}

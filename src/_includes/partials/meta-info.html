@@ -1,0 +1,47 @@
+{% set pageTitle = title + ' - ' + site.name %}
+
+{# We don't want any duplication. This is likely for the home page. #}
+{% if site.name === title %} 
+  {% set pageTitle = title %}
+{% endif %}
+
+{% set siteTitle = site.name %}
+{% set currentUrl = site.url + page.url %}
+
+{# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch 
+  them into the mix. #}
+{% if metaTitle %}
+  {% set pageTitle = metaTitle %}
+{% endif %}
+
+{% if not metaDesc %}
+  {% set metaDesc = excerpt if excerpt else summary %}
+{% endif %}
+
+
+<title>{{ pageTitle }}</title>
+<link rel="canonical" href="{{ currentUrl }}" />
+
+<meta property="og:site_name" content="{{ siteTitle }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ currentUrl }}" />
+
+{% if socialImage %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="{{ socialImage }}" />
+  <meta name="twitter:image" content="{{ socialImage }}" />
+  <meta property="og:image:alt" content="Cover image for {{ site.name }}" />
+  <meta name="twitter:image:alt" content="Cover image for {{ site.name }}" />
+{% endif %}
+
+{% if metaDesc %}
+  <meta name="description" content="{{ metaDesc }}" />
+  <meta name="twitter:description" content="{{ metaDesc }}" />
+  <meta property="og:description" content="{{ metaDesc }}" />
+{% endif %}
+
+<link rel="me" href="https://toot.cafe/@MarcoZehe" />
+<link rel="me" href="https://twitter.com/MarcoInEnglish" />
+<meta name="google-site-verification" content="U0-WV-RvXgwmA_aM2_Box67ZGq4ajoSWe_yrhBjCalM" />
+<meta name="msvalidate.01" content="C91AA90D9939680503E65F4A901ACF61" />

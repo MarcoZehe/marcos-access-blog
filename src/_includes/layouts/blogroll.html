@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+<article>
+  {% include "partials/page-header.html" %}
+<div class="[ dot-shadow panel ] [ bg-secondary-glare ]" id="post-list">
+  <div class="[ wrapper ] [ flow flow-space-700 ]">
+      {% for podcast in podcasts.items %}
+        {% set channelPath = podcast.channelPath %}
+        {% set podcastItems = podcast.itemsName %}
+    <h2 class="[ headline ] [ measure-micro ]" data-highlight="primary">
+      {{ wirSabbeln.rss.channel.title }}
+    </h2>
+    <p class="podcast-description">{{ wirSabbeln.rss.chanel.description }}</p>
+    <div class="[ post-list ] [ flow ]">
+        {% for item in wirSabbeln.rss.channel.item.slice(0,4) %}
+        <h3 class="[ post-list__item ] [ leading-tight measure-long ]">
+          <a href="{{ item.link }}" class="post-list__link">{{ item.title }}</a>
+    </h3>
+    <p class="post-summary">{{ item.description }}</p>
+        {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</article>
+{% endblock %}

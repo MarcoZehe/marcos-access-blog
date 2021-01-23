@@ -1,0 +1,38 @@
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1em;
+
+    &__item {
+        background-color: $post-list-bg;
+        padding: $distance-large;
+        flex-grow: 1;
+        flex-basis: 25rem;
+        margin: 1em;
+    }
+
+    a {
+        color: inherit;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    > * + * {
+        margin-top: $distance;
+    }
+
+    .headline {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+
+    &__tags {
+        a {
+            color: $link-color;
+        }
+    }
+}
+
+.post-summary {
+    margin: $distance 0;
+}

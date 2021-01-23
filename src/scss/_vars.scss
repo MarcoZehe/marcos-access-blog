@@ -1,0 +1,36 @@
+// colors
+$very-light-blue: #f4f6f8;
+$light-blue: #749ec7;
+$darkred: #a20000;
+
+// scales
+$distance: 16px;
+$distance-large: 40px;
+
+// links
+$link-color: $darkred;
+
+// post-list
+$post-list-bg: $very-light-blue;
+
+// page-header
+$page-header-bg: $very-light-blue;
+$page-header-tag-color: $darkred;
+
+// Breakpoints - erstmal nur Versuchsballons
+$bp-md: 800px;
+$bp-lg: 1000px;
+$bp-xl: 12000px;
+
+// navigation
+$nav-bg:transparent;
+$nav-color: $darkred;
+$nav-hover-bg: $darkred;
+$nav-hover-color: #fff;
+$nav-border: $darkred;
+
+// pagination
+$pagination-hover-color: $darkred;
+
+// recommended posts
+$recommended-posts-border: $very-light-blue;

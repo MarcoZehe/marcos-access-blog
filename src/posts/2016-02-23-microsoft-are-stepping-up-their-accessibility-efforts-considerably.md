@@ -1,0 +1,22 @@
+---
+title: Microsoft are stepping up their accessibility efforts considerably
+slug: microsoft-are-stepping-up-their-accessibility-efforts-considerably
+date_published: 2016-02-23T11:30:51.000Z
+date_updated: 2016-02-23T11:30:51.000Z
+---
+
+Have you also noticed an increased buzz around Microsoft&#8217;s accessibility efforts lately? You probably have if you, like me, are on Twitter and other social media channels and are following the [MSFTEnable](https://twitter.com/msftenable) Twitter account. But in case you haven&#8217;t, here are some exciting pointers for you to keep an eye on.
+
+When Microsoft&#8217;s CEO Satya Nadella took on his current role in 2014, one of the things he immediately brought into focus, was accessibility. He took it to a high level like only few other CEOs like Apple&#8217;s Tim Cook had done before, and certainly no prior Microsoft CEO had done before.
+
+In December 2015, this was [reaffirmed by Nadella](http://blogs.msdn.com/b/accessibility/archive/2015/12/16/reaffirming-our-commitment-to-accessibility.aspx) as being a critical mission for Microsoft. In January of 2016, this commitment was reflected in a [company reorganisation announcement](http://blogs.microsoft.com/on-the-issues/2016/01/20/moving-forward-on-accessibility-announcing-new-structure-and-leads/). Microsoft is taking a dual approach: They have both a centralized accessibility team, lead by Jenny Lay-Flurrie, as well as accessibility champions and key engineering positions across different divisions responsible for accessibility in their areas. And these shall then work together to deliver on the accessibility goal. It will be interesting to see how this plays out!
+
+First signs are already showing up. In an incredible change towards more transparency, Jenny Lay-Flurrie shared a roadmap for [upcoming accessibility efforts](http://blogs.microsoft.com/on-the-issues/2016/02/18/making-microsoft-products-accessible-path-forward/). And just yesterday, on February 22, the Office 365 team expanded on the planned enhancements for their line of products with an [extensive list](https://blogs.office.com/2016/02/22/accessibility-in-office-365-progress-in-2015-and-plans-for-2016/) of work ahead, and a retrospective on what has already been accomplished in 2015.
+
+Also, accessibility is creeping up all over the place in the Microsoft blogosphere. If you&#8217;re on the Windows 10 insider program, you probably saw mentions of problems and solutions introduced in the release notes for recent builds of Windows 10 for desktop on the &#8220;fast ring&#8221;. The team around the new Microsoft Edge browser have published their [roadmap for 2016](https://blogs.windows.com/msedgedev/2016/02/03/2016-platform-priorities/), in which accessibility has its own chapter right next to all the other stuff that is planned.
+
+As an insider to accessibility, but an outsider to the goings-on at Microsoft, this is all fantastic to see, and I can only encourage everyone involved at Microsoft to keep this going! I especially like the new openness that was introduced with the cultural change that has been going on at Microsoft in the past two or so years, and which is clearly visible even to people who are not Microsoft insiders. In the world of accessibility, talking about it usually means talking about something good and worthy of community support. And the best way to gain that, in my opinion, is to be open and honest about it, and inviting participation.
+
+For the foreseeable future, if you&#8217;re on Windows 10, Firefox and NVDA (or other supporting screen readers) are still your most accessible means to the web. And personally, I wouldn&#8217;t mind for it to stay that way for quite some time to come. 😉 But it is good to see Microsoft developing the new Edge browser with [proper API support](https://www.marcozehe.de/2013/09/07/why-accessibility-apis-matter/) right from the beginning, and getting rid of Internet Explorer and its requirement for every assistive technology to have to do their own HTML parsing. It&#8217;s good for users, and developers alike.
+
+So if you&#8217;re a Windows user and want to help with this endeavor, I encourage you to follow Microsoft&#8217;s blogs, and if you are daring or have an extra machine, get on the Windows and Office insider programs to provide feedback as things develop further. The times they are a changing, and the changes at Microsoft are certainly exciting to see!

@@ -1,0 +1,22 @@
+<div class="[ wrapper ] [ flow flow-space-700 ]" id="post-list">
+  {% if postListHeadline %}
+  <h2 class="[ headline ] [ measure-micro ]" data-highlight="primary">
+    {{ postListHeadline }}
+  </h2>
+  {% endif %}
+  <div class="[ post-list ] [ flow ]">
+      {% for item in postListItems %}
+    <div class="[ post-list__item ]">
+      <h{% if postListHeadline %}3{% else %}2{% endif %} class="[ headline leading-tight measure-long ]">
+        <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
+      </h{% if postListHeadline %}3{% else %}2{% endif %}>
+      <p class="post-summary">{% if item.data.excerpt %} {{ item.data.excerpt }} {% else %} {% excerpt item %} {% endif %}</p>
+      <p class="post-list__tags">tagged with:  <span>
+            {% for tag in item.data.tags %}
+          <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>{% if not loop.last %}, {% endif %}
+      {% endfor %}
+      </span></p>
+    </div>
+      {% endfor %}
+  </div>
+</div>

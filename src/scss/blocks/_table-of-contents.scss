@@ -1,0 +1,41 @@
+.table-of-contents {
+    padding: $distance;
+    background-color: wheat;
+    ol {
+        list-style-type: none;
+        padding-left: $distance;
+    }
+    li {
+        font-size: 1rem;
+    }
+    > ol {
+        counter-reset: level1;
+
+        > li {
+            counter-increment: level1;
+            
+            &::before {
+                content: counter(level1) ". ";
+            }
+    
+            > ol {
+                margin: 0.5em 0;
+                counter-reset: level2;
+    
+                > li {
+                    counter-increment: level2;
+    
+                    &::before {
+                        content: counter(level1) "." counter(level2) ". ";
+                    }
+                }
+            }
+    
+    
+        }
+    }
+
+    a {
+        padding-left: 0.5em;
+    }
+}

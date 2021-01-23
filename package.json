@@ -1,0 +1,39 @@
+{
+  "name": "marcos-access-blog",
+  "version": "1.0.0",
+  "description": "My blog about all things accessibility and other tech that interests me.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoZehe/marcos-access-blog.git"
+  },
+  "keywords": [],
+  "author": "Marco Zehe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoZehe/marcos-access-blog/issues"
+  },
+  "homepage": "https://marcozehe.de",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "concurrently": "^5.3.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "html-minifier": "^4.0.0",
+    "markdown-it-anchor": "^7.0.0",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "moment": "^2.29.1",
+    "netlify-plugin-fetch-feeds": "^0.2.3",
+    "sass": "^1.32.2",
+    "slugify": "^1.4.6"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6"
+  }
+}

@@ -1,0 +1,26 @@
+.page-header {
+    background-color: $page-header-bg;
+
+    &__heading {
+        margin-bottom: $distance;
+        font-size: 1.75rem;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    .tags-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            margin-right: $distance;
+        }
+        a {
+            color: $page-header-tag-color;
+
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}

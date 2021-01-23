@@ -13,7 +13,6 @@ The problem: You have a form, a contact form, for example, that you want to put 
 
 Let&#8217;s start out with a simple form.
 
-    
     <html>
     <head>
     <title>Contact form</title>
@@ -34,8 +33,7 @@ Let&#8217;s start out with a simple form.
     <input type="reset" name="reset" value="Reset form"/>
     </form>
     </body>
-    </html>
-    
+    </html>    
 
 Straight and simple, but we&#8217;re not here to win beauty prices anyway. 🙂
 
@@ -51,7 +49,6 @@ All of this happens when the input loses focus, meaning in the &#8220;onblur&#82
 
 The JavaScript code I wrote looks like this, inserted above the closing &#8220;head&#8221; tag:
 
-    
       function removeOldAlert()
       {
         var oldAlert = document.getElementById("alert");
@@ -74,8 +71,6 @@ The JavaScript code I wrote looks like this, inserted above the closing &#8220;h
       {
         var elem = document.getElementById(aID);
         var invalid = (elem.value.indexOf(aSearchTerm) 
-    
-    
 
 #### The checkValidity function
 
@@ -104,10 +99,8 @@ The moment this happens, Firefox will fire an "alert" event to assistive technol
 
 All that's left now is add the event handler. We need to change the two inputs for e-mail and name for this:
 
-    
     <input name="name" id="name" aria-required="true" onblur="checkValidity('name', ' ', 'Invalid name entered!');"/><br />
     <input name="email" id="email" aria-required="true" onblur="checkValidity('email', '@', 'Invalid e-mail address');"/><br />
-    
 
 ### Testing the example
 
@@ -119,7 +112,9 @@ I've put up the above as an [static example page](http://www.marco-zehe.de/examp
 In both cases, when returning focus to the field in question, your screen reader should tell you that this field is invalid. JAWS 9 supports this, but JAWS 8 does not, so this may not work in all versions of the screen readers supported.
 
 ### A few questions that you might have
+
 Why did you put both "(required)" in the label text and the *aria-required* attribute on some of the inputs?Because if this were a real live form, and the site was being visited by a browser that does not yet support ARIA, we'd still want to give an indication that this is a required field.Why don't you set focus back to the invalid field automatically?Because this is not allowed by at least the Windows API specs and possibly others. Also, letting the focus jump around without real user interaction too often is not a nice thing to do in general.
+
 ### In conclusion
 
 Personally, it is my hope that websites would include such techniques more often in the future when filling out forms. There's nothing more frustrating than filling out a form with 20 or so fields, submitting it, only to find that field 3 was invalid, and having to go through all fields again to make sure the values were retained, or supplying some information redundantly.
@@ -130,7 +125,7 @@ I hope you found this little tutorial of some use! I'd welcome your feedback as 
 
 And of course, you're welcome to enhance this little example as a "homework" to also check whether something valid was entered for the "message" textarea.
 
-##### Previous Easy ARIA tips
+## Previous Easy ARIA tips
 
 1. [aria-required](http://www.marcozehe.de/2008/02/29/easy-aria-tip-1-using-aria-required/)
 2. [aria-labelledby and aria-describedby](http://www.marcozehe.de/2008/03/23/easy-aria-tip-2-aria-labelledby-and-aria-describedby/)

@@ -33,12 +33,10 @@ Our original example, however, was better in that it provided validation right a
 
 1. Bring back the first two functions from the original ARIA version unchanged. These remove any existing alert box, and they create a new alert with the given message.
 2. Adjust the function that is called in the *onblur* handler of the &#8220;name&#8221; and &#8220;email&#8221; fields (see below):
-
-1. First, we have to adjust the function name to something that doesn&#8217;t clash with a reserved word. I used `testIfEntryIsValid`.
-2. Now, get rid of the search string and error message parameters. These are no longer needed because the validation is done by the browser, and we simply use the HTML5 form constraints API to ask the browser for the relevant info. Also, the browser provides us with the appropriate error message, so no need to generate one ourselves here.
-3. In the if clause, simply ask if the call to the checkValidity() method of the element we obtained in the line above gives us a &#8220;true&#8221; or &#8220;false&#8221; result. If true, simply remove the old alert. If false, create an alert and use the element&#8217;s validationMessage property as the message parameter. The browser will handle the rest for us.
-4. Remove the lines that set *aria-invalid*. These are no longer needed, since the browser&#8217;s constraint validation will provide the invalid or valid states automatically.
-
+   1. First, we have to adjust the function name to something that doesn&#8217;t clash with a reserved word. I used `testIfEntryIsValid`.
+   2. Now, get rid of the search string and error message parameters. These are no longer needed because the validation is done by the browser, and we simply use the HTML5 form constraints API to ask the browser for the relevant info. Also, the browser provides us with the appropriate error message, so no need to generate one ourselves here.
+   3. In the if clause, simply ask if the call to the checkValidity() method of the element we obtained in the line above gives us a &#8220;true&#8221; or &#8220;false&#8221; result. If true, simply remove the old alert. If false, create an alert and use the element&#8217;s validationMessage property as the message parameter. The browser will handle the rest for us.
+   4. Remove the lines that set *aria-invalid*. These are no longer needed, since the browser&#8217;s constraint validation will provide the invalid or valid states automatically.
 3. For the &#8220;name&#8221; and &#8220;email&#8221; fields, add back *onblur* handlers pointing to the above function and simply pass in the field&#8217;s ID.
 
 Testing this example, it shows that we&#8217;ve got our original functionality back. In addition, if we ignore the intermediate error messages, the browser&#8217;s validation mechanism will throw us back to any of the wrongly filled out fields upon a submission attempt. Note that not all browsers do this last step. Safari on the Mac, for example, will submit the form even if it contains invalid entries.

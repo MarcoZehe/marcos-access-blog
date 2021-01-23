@@ -92,7 +92,7 @@ The clearer you separate the three, the more maintainable your code will be. Put
 
 Have you ever stood in the sunlight or another bright light source with your smartphone or tablet in hand and wondered why you couldn&#8217;t read something? Well, you were suffering from a lack of contrast between foreground and background on the page you were visiting. Low contrast ratios lead to bad readability in bright light situations. For the aging population, as well as low-vision users, low contrasts pose an even greater obstacle in readability. The Web Content Accessibility Guidelines define as a success criteria to have a [contrast ratio of 4.5:1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) on main content text to its background. You can use tools like the [Colour Contrast Analyser](https://www.paciellogroup.com/resources/contrastanalyser/) to point at your content and see whether your visuals meet this requirement. Even if you&#8217;re not auditing for WCAG compliance, adhering to this rule of thumb is still a good idea for your own eyes as well as everyone else&#8217;s.
 
-### Keep Pinch alive!
+### Keep Pinch alive
 
 When you develop for the mobile web, and today it is most likely you are, please [keep the Pinch To Zoom gesture alive](http://www.iheni.com/mobile-accessibility-tip-dont-suppress-pinch-zoom/)! Do not disable this gesture vital to many more of your readers than you might think! Pinching to zoom something small on a web page is very common and does not apply only to aging readers as well as those with low vision. If your layout does not cope with the pinch gesture for some reason, you need to revisit your responsive design and fix it. Do *not* disable the pinch gesture on mobile browsers!
 

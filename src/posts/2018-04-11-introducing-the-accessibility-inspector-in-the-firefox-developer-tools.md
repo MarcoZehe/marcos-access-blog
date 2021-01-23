@@ -45,6 +45,7 @@ This will open the Accessibility Inspector and drop you right into the node that
 [![Screenshot of the accessibility inspector panel showing properties of an object such as name, role, description etc.](/content/images/wordpress/2018/04/b0587-panel-with-properties.png?w=1000)](/content/images/wordpress/2018/04/b0587-panel-with-properties.png)Screenshot of the accessibility inspector panel showing properties of an object
 If you are sighted, you can also observe that, as you navigate the accessibility object tree, a visual highlighter indicates which element this object corresponds to.
 [![A visual highlighter indicating the actual on-screen object corresponding to the selection made in the accessible objects tree](/content/images/wordpress/2018/04/53e98-picker-highlighter.png?w=1000)](/content/images/wordpress/2018/04/53e98-picker-highlighter.png)The highlight that accompanies the selection in the accessibility inspector object tree.
+
 ### Turning off the engine after you&#8217;re done
 
 If you do not normally use an assistive technology in Firefox, after you&#8217;re done inspecting, you might want to turn the accessibility engine back off. The same button that initially started it will also turn it off for you.

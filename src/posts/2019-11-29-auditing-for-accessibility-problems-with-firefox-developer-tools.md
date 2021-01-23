@@ -30,12 +30,14 @@ Since Firefox 69, you have the ability to filter the list of accessibility objec
 
 The check for text labels goes through the whole document and flags all the [issues it knows about](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Text_labels_and_names). Among other things, it finds missing alt-text (alternative text) on images, missing titles on iframes or embeds, missing labels for form elements such as inputs or selects, and missing text in a heading element.
 [![Screenshot of text label issues being displayed in the inspector](/content/images/wordpress/2019/11/text-labels-cropped.png?w=1000)](/content/images/wordpress/2019/11/text-labels-cropped.png)
+
 ### Check for Keyboard issues
 
 Keyboard navigation and visual focus are common sources of accessibility issues for various types of users. To help debug these more easily, Firefox 70 contains a checker for many [common keyboard and focus problems](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Keyboard). This auditing tool detects elements that are actionable or have interactive semantics. It can also detect if focus styling has been applied. However, there is high variability in the way controls are styled. In some cases, this results in false positives. If possible, [we would like to hear from you](https://discourse.mozilla.org/t/feedback-wanted-keyboard-and-focus-visibility-accessibility-audit/47359) about these false positives, with an example that we can reproduce.
 
 For more information about focus problems and how to fix them, don’t miss [Hidde’s post on indicating focus](https://hacks.mozilla.org/2019/06/indicating-focus-to-improve-accessibility/).
 [![Screenshot of keyboard issues displayed in the inspector](/content/images/wordpress/2019/11/keyboard-cropped.png?w=1000)](/content/images/wordpress/2019/11/keyboard-cropped.png)
+
 ### Contrast
 
 Firefox includes a full-page color contrast checker that checks for [all three types of color contrast issues](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) identified by the Web Content Accessibility Guidelines 2.1 (WCAG 2.1):
@@ -48,6 +50,7 @@ In addition, the color contrast checker provides information on the triple-A suc
 
 Are you using a gradient background or a background with other forms of varying colors? In this case, the contrast checker (and accessibility element picker) indicates which parts of the gradient meet the minimum requirements for color contrast ratios.
 [![screenshot of color contrast issues showing in the inspector](/content/images/wordpress/2019/11/color-contrast-cropped.png?w=1000)](/content/images/wordpress/2019/11/color-contrast-cropped.png)
+
 ## Color Vision Deficiency Simulator
 
 Firefox 70 contains a new tool that [simulates](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector/Simulation) seven types of color vision deficiencies, a.k.a. color blindness. It shows a close approximation of how a person with one of these conditions would see your page. In addition, it informs you if you’ve colored something that would not be viewable by a colorblind user. Have you provided an alternative? For example, someone who has Protanomaly (low red) or Protanopia (no red) color perception would be unable to view an error message colored in red.
@@ -56,12 +59,14 @@ As with all vision deficiencies, no two users have exactly the same perception. 
 
 Note: The color vision deficiency simulator is only available if you have [WebRender](https://hacks.mozilla.org/2017/10/the-whole-web-at-maximum-fps-how-webrender-gets-rid-of-jank/) enabled. If it isn’t enabled by default, you can toggle the gfx.webrender.all property to True in about:config.
 [![Screenshot of a full page view with the simulator in action](/content/images/wordpress/2019/11/simulator-fullpage.png?w=1000)](/content/images/wordpress/2019/11/simulator-fullpage.png)
+
 ## Quick auditing with the accessibility picker
 
 As a mouse user, you can also quickly audit elements on your page using the accessibility picker. Like the DOM element picker, it highlights the element you selected and displays its properties. Additionally, as you hover the mouse over elements, Firefox displays an information bar that shows the name, role, and states, as well as color contrast ratio for the element you picked.
 
 First, click the Accessibility Picker icon. Then click on an element to show its properties. Want to quickly check multiple elements in rapid succession? Click the picker, then hold the shift key to click on multiple items one after another to view their properties.
 [![screenshot of the accessibility picker in action](/content/images/wordpress/2019/11/picker-fullpage.png?w=1000)](/content/images/wordpress/2019/11/picker-fullpage.png)
+
 ## In Conclusion
 
 Since its release back in June 2018, the Accessibility Inspector has become a valuable helper in identifying many common accessibility issues. You can rely on it to assist in designing your color palette. Use it to ensure you always offer good contrast and color choices. We build a11y features into the DevTools that you’ve come to depend on, so you do not need to download or search for external services or extensions first.

@@ -34,7 +34,7 @@ Before exporting your content from WordPress, make sure that the author's profil
 
 ### Check your image paths
 
-This is another bit that differs between Ghost and WordPress. WordPress puts images into a wp-content/uploads/year/mo/<filename> folder. The Ghost exporter tries to mimic that, puts the images in content/wordpress/year/mo/<filenames>. But the links in the actually exported JSON file are not adjusted, you have to do that manually in your favorite text editor with a find and replace operation. And don't forget to zip up the changed JSON file back into the export you want to upload to the Ghost importer.
+This is another bit that differs between Ghost and WordPress. WordPress puts images into a wp-content/uploads/year/mo/filename folder. The Ghost exporter tries to mimic that, puts the images in content/wordpress/year/mo/filenames. But the links in the actually exported JSON file are not adjusted, you have to do that manually in your favorite text editor with a find and replace operation. And don't forget to zip up the changed JSON file back into the export you want to upload to the Ghost importer.
 
 ### Permalink redirects
 

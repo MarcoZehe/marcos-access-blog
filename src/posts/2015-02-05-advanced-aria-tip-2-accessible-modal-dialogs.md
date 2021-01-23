@@ -26,17 +26,15 @@ In the following example, we&#8217;ll call the title the &#8220;label&#8221;, an
 
 In HTML5 markup, this dialog could look something like this.
 
-    
-    
-    Save "untitled" document?
-    
-    You have made changes to "untitled.txt" that have not been saved. What do you want to do?
-    
+```html
+    <div>
+      <h2>Save "untitled" document?</h2>
+      <p>You have made changes to "untitled.txt" that have not been saved. What do you want to do?</p>
       <button id="saveMe" type="button">Save changes</button>
       <button id="discardMe" type="button">Discard changes</button>
       <button id="neverMind" type="button">Cancel</button>
     </div>
-    
+```
 
 Let&#8217;s go through this step by step:
 

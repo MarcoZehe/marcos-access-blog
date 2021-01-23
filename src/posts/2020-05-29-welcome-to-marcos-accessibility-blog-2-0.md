@@ -64,7 +64,7 @@ So I decided that I am not going to integrate any commenting system into my Ghos
 
 ## Conclusion
 
-I hope you'll enjoy this new chapter of the journey with me, and stay a loyal reader! This blog will, as previously hinted, in the future focus more on personal topics, research, and other related items. For a glimpse, well, reread this post. ;-) 
+I hope you'll enjoy this new chapter of the journey with me, and stay a loyal reader! This blog will, as previously hinted, in the future focus more on personal topics, research, and other related items. For a glimpse, well, reread this post. ;-)
 
 In a future article, I will go into some of the Ghost-specific details I dealt with when migrating from my WordPress setup.
 

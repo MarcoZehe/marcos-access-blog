@@ -92,6 +92,6 @@ This article is not meant to replace the NVDA user guide. Nor is it aimed to rep
 
 Having said that, feedback is, of course, very welcome! You can find information on how to contact me on the “About” page.
 
-###### In other languages
+## In other languages
 
 This article has been translated into the [Spanish](http://www.webhostinghub.com/support/es/misc/probar-la-accesibilidad) language by Maria Ramos  from [Webhostinghub.com](http://www.webhostinghub.com/).

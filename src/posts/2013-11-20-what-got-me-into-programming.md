@@ -24,7 +24,7 @@ I even beta tested Delphi 2007, codenamed Spaceley, in late 2006 and early 2007,
 
 But even today, I still occasionally receive questions about current Delphi versions, based on the scripts I wrote and contributed to JAWS in the mid 2000s. And sometimes I am very sorry to have to tell people that I cannot help them any further nowadays, since I totally am out of touch with this part of the software world. Yes, Delphi is still around, now under the Embarcadero umbrella, and includes a lot of different platforms besides Windows.
 
-So today, it was time to celebrate a little. I raise a glass to all the great folks who work and worked on Turbo Pascal and Delphi. Thank you, without you, I might not have started programming at all! 
+So today, it was time to celebrate a little. I raise a glass to all the great folks who work and worked on Turbo Pascal and Delphi. Thank you, without you, I might not have started programming at all!
 
     Program Celebrate;
     

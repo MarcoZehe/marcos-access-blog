@@ -29,6 +29,6 @@ Allows you to specify the number of minutes of inactivity after which your compu
 
 JAWS 8.0 has its own logic to find labels, causing it to always override the accessibleName the textbox of an HTML document gets. With JAWS 8, I have not found a way to get it to accept the label from the example above. But NVDA and Window-Eyes do it just fine, and Orca on Linux also has no problems.
 
-##### Previous Easy ARIA tips
+## Previous Easy ARIA tips
 
 1. [aria-required](http://www.marcozehe.de/2008/02/29/easy-aria-tip-1-using-aria-required/)

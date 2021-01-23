@@ -25,7 +25,7 @@ Describe your image. The description can be up to 420 characters in length. You 
 In the below tweet, click the link that has the date on it to see the full tweet in a tab in your browser, and find the image description with the graphic below the tweet text.
 
 > First tweet with an alt on a photo [#a11y](https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw)[@Jennison](https://twitter.com/Jennison?ref_src=twsrc%5Etfw) how does it read? [pic.twitter.com/A8mMeuuSeN](https://t.co/A8mMeuuSeN)
-> 
+>
 > &mdash; Gen-axe-er (@dylanbarrell) [March 29, 2016](https://twitter.com/dylanbarrell/status/714814603637559296?ref_src=twsrc%5Etfw)
 
 Now add your usual tweet text, which obviously doesn&#8217;t need to include the description of the image, and tweet.

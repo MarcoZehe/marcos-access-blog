@@ -38,20 +38,16 @@ If you follow my [Twitter account](http://twitter.com/MarcoInEnglish), and you w
 In Firefox using EasyChirp, the sequence is as follows. This is assuming I have EasyChirp in a pinned (or app) tab which means it automatically loads when I start Firefox:
 
 1. I have to sign in first. EasyChirp does not sign me on, and it doesn&#8217;t keep a Twitter-provided authorization for more than half an hour. Signing in goes as follows:
-
-1. Either find the &#8220;Skip to sign in&#8221; link, press enter, then DownArrow, then Enter again to activate the Sign In link. Or: Use NVDA+F7 to open the list of elements, find the sign in link by typing s and i, and pressing Enter to close the dialog and activate the link. Or: Press NVDA+F to open find, type sign in, and press Enter, hoping to land on the actual sign in link, not the skip to sign in one. Press Enter again to activate once you found the right one.
-2. Page loads.
-3. Either sign into Twitter, which involves finding the edit box for the user name, typing it in, tabbing, typing in password, pressing Enter to sign in. Or, continue with next step.
-4. If auto-signed in or just signed in, press B, which is a quick navigation key to find the next button, which takes me to the &#8220;Authorize app&#8221; button, and press Enter or Space to activate.
-5. Another page load.
-
+   1. Either find the &#8220;Skip to sign in&#8221; link, press enter, then DownArrow, then Enter again to activate the Sign In link. Or: Use NVDA+F7 to open the list of elements, find the sign in link by typing s and i, and pressing Enter to close the dialog and activate the link. Or: Press NVDA+F to open find, type sign in, and press Enter, hoping to land on the actual sign in link, not the skip to sign in one. Press Enter again to activate once you found the right one.
+   2. Page loads.
+   3. Either sign into Twitter, which involves finding the edit box for the user name, typing it in, tabbing, typing in password, pressing Enter to sign in. Or, continue with next step.
+   4. If auto-signed in or just signed in, press B, which is a quick navigation key to find the next button, which takes me to the &#8220;Authorize app&#8221; button, and press Enter or Space to activate.
+   5. Another page load.
 2. Now we&#8217;ve arrived in the timeline. Posting a tweet involves these steps:
-
-1. Press E to go to the next (first) edit box on the page, which happens to be the &#8220;What&#8217;s happening?&#8221; field.
-2. Press Enter to enter focus mode, in other screen readers also called &#8220;forms mode&#8221;. This is a technical necessity and annoyance having to do with the way browsers have to interact with screen readers on Windows in the most efficient manner possible.
-3. Type my stuff
-4. Because this is a textarea, I have to Tab to the &#8220;Post&#8221; button and then press Enter or Space.
-
+   1. Press E to go to the next (first) edit box on the page, which happens to be the &#8220;What&#8217;s happening?&#8221; field.
+   2. Press Enter to enter focus mode, in other screen readers also called &#8220;forms mode&#8221;. This is a technical necessity and annoyance having to do with the way browsers have to interact with screen readers on Windows in the most efficient manner possible.
+   3. Type my stuff
+   4. Because this is a textarea, I have to Tab to the &#8220;Post&#8221; button and then press Enter or Space.
 3. If I want to read the timeline, it&#8217;s a combination of using the H and Q quick navigation keys. Every new tweet area starts with a heading that contains the user name, but the actual tweet text is then contained within a blockquote element, so I go H to find out who wrote it, and then skip over the user avatar graphic by pressing the BlockQuote key to hear what they were tweeting.
 
 Anyone kept count? 🙂 And this is with an **accessible** web application! And it doesn&#8217;t even take into account that it doesn&#8217;t really keep your reading position. In other words, If I come back three hours later and have to re-sign in and the timeline comes up, there&#8217;s no way to get back to the point where I left off reading the newest tweet to read back in chronological order. My desktop app can simply sit there, collect the new tweets while I do something else, and when I come back, I can simply arrow around to read the tweets in a chronological order. My mobile client uses the TweetMarker service to remember where I left off and can start from there upon next launch.

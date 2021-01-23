@@ -21,7 +21,7 @@
   for = "/rss.xml"
   [headers.values]
     content-type = "application/rss+xml; charset=UTF-8"
-    
+
 [[headers]]
   for = "/*"
   [headers.values]

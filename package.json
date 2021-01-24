@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/MarcoZehe/marcos-access-blog/issues"
   },
-  "homepage": "https://marcozehe.de",
+  "homepage": "https://www.marcozehe.de",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.0.9",

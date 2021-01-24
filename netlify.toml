@@ -48,7 +48,7 @@
       url = "https://piccalil.li/feed.xml"
       ttl = 86400   # Cache for 24 hours
 
-    [[plugins.inputs.feeds]]
-      name = "saraSoueidan"
-      url = "https://www.sarasoueidan.com/blog/index.xml"
-      ttl = 86400   # Cache for 24 hours
+#    [[plugins.inputs.feeds]]
+#      name = "saraSoueidan"
+#      url = "https://www.sarasoueidan.com/blog/index.xml"
+#      ttl = 86400   # Cache for 24 hours

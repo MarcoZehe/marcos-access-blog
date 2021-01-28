@@ -1,7 +1,7 @@
 ---
-title: "Sende mir eine Nachricht"
+title: "Send me a message"
 layout: "layouts/contact.html"
 permalink: "/contact/index.html"
 ---
 
-Mit dem unten stehenden Formular kanst du mir eine Nachricht zukommen lassen. Ich verspreche, die E-Mail-Adresse nur zum Zwecke der Antwort auf Deine Nachricht zu verwenden.
+Using the below form, you can send me a message. I promise to only use the e-mail you provide to reply to your message, if desired, and not do any other naughty things with it or any of the other data you provide.

@@ -30,7 +30,6 @@
     "markdown-it-anchor": "^7.0.0",
     "markdown-it-toc-done-right": "^4.2.0",
     "moment": "^2.29.4",
-    "netlify-plugin-fetch-feeds": "^0.2.3",
     "sass": "^1.32.2",
     "slugify": "^1.4.6"
   },
